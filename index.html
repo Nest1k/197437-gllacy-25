@@ -5,12 +5,40 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+  <form class="registration-bulb" action="index.html" method="post">
+    <input type="email" name="email" value="Электронная почта"><br>
+    <input type="text" name="password" value="Пароль"><br>
+    <button type="button" name="entry" value="Войти">Войти</button>
+    <a href="#">Забыли пароль?</a>
+    <a href="#">Новая регистрация</a>
+  </form>
+
+  <form class="feedback-bulb" action="index.html" method="post">
+    Мы обязательно вам ответим!<br>
+    <input type="text" name="name" value="Как вас зовут?"><br>
+    <input type="email" name="email" value="Ваша почта для ответа?"><br>
+    <textarea name="name" rows="8" cols="40">Напишите что-нибудь...</textarea><br>
+    <button type="button" name="entry" value="Отправить">Отправить</button>
+  </form>
+
+  <form class="search-bulb" action="index.html" method="post">
+    <input type="search" name="search-site" value="Что ищем?">
+  </form>
+
 
     <header>
       <img src="img/logo.svg" width="154" height="64" alt="Gllacy">
       <nav class="nav">
         <ul>
-          <li class="menu-item"><a href="catalog.html">Катало</a></li>
+          <li class="menu-item"><a href="catalog.html">Катало</a>
+            <ul>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
           <li class="menu-item"><a href="delivery.html">Доставка и оплата</a></li>
           <li class="menu-item"><a href="company.html">О Компании</a></li>
         </ul>
@@ -131,10 +159,11 @@
         <ul class="info-links">
           <li><a href="#" class="info-item">Для поставщиков</a></li>
           <li><a href="#" class="info-item">Наши документы</a></li>
-          <li><a href="#" class="info-item">О производстве</a></li>
+          <li><a href="#" class="info-item">О произв  одстве</a></li>
           <li><a href="#" class="info-item">Экологические стандарты</a></li>
         </ul>
       </div>
+
 
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="HTML Academy" class="logo-footer"></a>
       <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
