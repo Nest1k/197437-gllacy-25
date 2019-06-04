@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -10,7 +13,7 @@
     <img src="img/logo.svg" width="154" height="64" alt="Gllacy">
     <nav class="nav">
       <ul>
-        <li class="menu-item"><a href="catalog.html">Каталог</a></li>
+        <li class="menu-item"><a class="btn-catalo" href="catalog.html">Каталог</a></li>
         <li class="menu-item"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="menu-item"><a href="company.html">О Компании</a></li>
       </ul>
@@ -23,8 +26,8 @@
     </div>
 
     <form class="basket-bulb" action="index.html" method="post">
-      <div class="basket-item"><img src="img/ice1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</div>  <div class="mass">1,5 кг х <span class="basket-price-kg">200 руб.</span></div>  <div class="price">300 руб.</div>
-      <div class="basket-item"><img src="img/ice3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада">Клубничный пломбир с присыпкой  из белого шоколада</div>  <div class="mass">1,5 кг х <span class="basket-price-kg">300 руб.</span></div>  <div class="price">450 руб.</div>
+      <div class="basket-item"><img class="icecream-pic" src="img/ice1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</div>  <div class="mass">1,5 кг х <span class="basket-price-kg">200 руб.</span></div>  <div class="price">300 руб.</div>
+      <div class="basket-item"><img class="icecream-pic" src="img/ice3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой  из белого шоколада">Клубничный пломбир с присыпкой  из белого шоколада</div>  <div class="mass">1,5 кг х <span class="basket-price-kg">300 руб.</span></div>  <div class="price">450 руб.</div>
       <div class="final-price">Итого: 750 руб.</div>
       <button type="button" name="Оформить заказ">Оформить заказ</button>
     </form>
@@ -42,7 +45,7 @@
   <h2>Сливочное Мороженое</h2>
 
   <div>
-    <ul>
+    <ul class="icecream-item">
       <li>
         <img class="icecream-pic" src="img/ice1.jpg" width="267" height="267" alt="Мороженое">
         <div class="icecream-price">310<span class="weight">/кг</span></div>
@@ -127,7 +130,7 @@
 
   <div class="info">
     <ul class="info-links">
-      <li><a href="#" class="info-item">Для поставщиков</a></li>
+      <li><a href="#" class="info-item post">Для поставщиков</a></li>
       <li><a href="#" class="info-item">Наши документы</a></li>
       <li><a href="#" class="info-item">О производстве</a></li>
       <li><a href="#" class="info-item">Экологические стандарты</a></li>

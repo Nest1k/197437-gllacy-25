@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <form class="registration-bulb" action="index.html" method="post">
@@ -49,9 +52,8 @@
         <a href="#" class="login">Вход</a>
         <a href="#" class="basket">Пусто</a>
       </div>
-      <div class="contact-top">
-        С 10 до 20, ежедневно<br><span>8 812 450-25-25</span>
-      </div>
+      <<div class="head-time">С 10 до 20, ежедневно</div>
+      <div class="head-phone">8 812 450-25-25</div>
     </header>
 
     <main>
@@ -62,6 +64,26 @@
         <h2>Крем-брюле и пломбир с малиновым джемом</h2>
         <button>Давайте оба!</button>
       </section>
+
+      <section class="head-main">
+        <img class="icecream-pic" src="#" alt="Мороженое">
+        <h2>Шоколадный пломбир и лимонный сорбет </h2>
+        <button>Давайте оба!</button>
+      </section>
+
+      <section class="head-main">
+        <img class="icecream-pic" src="#" alt="Мороженое">
+        <h2>Пломбир с помадкой и клубничный щербет</h2>
+        <button>Давайте оба!</button>
+      </section>
+
+      <ul class="slide-switches">
+        <li class="slide-radio"><button class="slide-btn">Первый слайд</button></li>
+        <li class="slide-radio"><button class="slide-btn">Второй слайд</button></li>
+        <li class="slide-radio"><button class="slide-btn">Третий слайд</button></li>
+      </ul>
+
+
 
       <section class="raspberry-free">
         <h2>Малинка даром!</h2>
@@ -74,7 +96,7 @@
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <button>Хочу шоколадки</button>
       </section>
-      <ul>
+      <ul class="hit-icecream">
         <li>
           <img class="icecream-pic" src="img/ice1.jpg" width="267" height="267" alt="Мороженое">
           <p class="icecream-price">310<span class="weight">/кг</span></p>
@@ -101,30 +123,30 @@
       <section class="advantages">
         <h2 class="advantages-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="advantages-list">
-         <li class="advantages">
+         <li class="advantages-fabric">
            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
          </li>
-         <li class="advantages">
+         <li class="advantages-ferm">
            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
          </li>
-         <li class="advantages">
+         <li class="advantages-eco">
            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
          </li>
-         <li class="advantages">
+         <li class="advantages-termo">
            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус. </p>
          </li>
         </ul>
       </section>
 
-      <article class="blog">
+      <article class="new-post">
         <h2 class="blog-new">Новое в нашем блоге</h2>
         <p class="blog-text"><a href="#">10 способов сервировки  фруктовых щербетов к  столу</a></p>
       </article>
 
       <div class="mailing">
         <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <input type="email" name="email" placeholder="Электронная почта">
-        <button>Отправить</button>
+        <input class="form-mailing" type="email" name="email" placeholder="Электронная почта">
+        <button class="btn-mailing">Отправить</button>
       </div>
 
 
@@ -157,7 +179,7 @@
 
       <div class="info">
         <ul class="info-links">
-          <li><a href="#" class="info-item">Для поставщиков</a></li>
+          <li><a href="#" class="info-item post">Для поставщиков</a></li>
           <li><a href="#" class="info-item">Наши документы</a></li>
           <li><a href="#" class="info-item">О произв  одстве</a></li>
           <li><a href="#" class="info-item">Экологические стандарты</a></li>
