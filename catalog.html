@@ -30,12 +30,12 @@
     <div class="user-block">
       <a href="#" class="btn btn-search">поиск</a>
       <form class="search-bulb" action="index.html" method="post">
-        <input id="search" type="search" name="search" value="Что ищем?">
+        <input id="search" type="search" name="search" placeholder="Что ищем?">
       </form>
       <a href="#" class="btn btn-login">Вход</a>
       <form class="registr-bulb" action="#" method="get">
-        <input type="email" name="login" value="Электронная почта"><br>
-        <input type="text" name="password" value="Пароль"><br>
+        <input type="email" name="login" placeholder="Электронная почта"><br>
+        <input type="text" name="password" placeholder="Пароль"><br>
         <button class="btn" type="button" name="button" value="Войти">Войти</button>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
@@ -64,41 +64,37 @@
 
   <form class="sort-main" action="index.html" method="post">
     <div class="sort-icecream">
-      <p>Сортировка:
-        <select name="sort-1">
-          <option value="popular">по популярности</option>
-          <option value="lowest-first">сначала недорогие</option>
-          <option value="highest-first">сначала дорогие</option>
-          <option value="fat">по жирности</option>
-        </select>
-      </p>
+      <p>Сортировка:</p>
+      <select name="sort-1">
+        <option value="popular">по популярности</option>
+        <option value="lowest-first">сначала недорогие</option>
+        <option value="highest-first">сначала дорогие</option>
+        <option value="fat">по жирности</option>
+      </select>
     </div>
     <div class="sort-price">
-      <p>Цена: 100 руб. – 500 руб.
-        <input type="range" min="0" max="700" name="price 0-700" value="price 0-700">
-      </p>
+      <p>Цена: 100 руб. – 500 руб.</p>
+      <input type="range" min="0" max="700" name="price 0-700" value="price 0-700">
     </div>
     <div class="sort-fat">
-      <p>Жирность
-        <label><input type="radio" name="fat" value="fat 0">0%</label>
-        <label><input type="radio" name="fat" value="fat 0-10" checked>до 10%</label>
-        <label><input type="radio" name="fat" value="fat 0-30">до 30%</label>
-        <label><input type="radio" name="fat" value="fat 30+">выше 30%</label>
-      </p>
+      <p>Жирность</p>
+      <label><input type="radio" name="fat" value="fat 0">0%</label>
+      <label><input type="radio" name="fat" value="fat 0-10" checked>до 10%</label>
+      <label><input type="radio" name="fat" value="fat 0-30">до 30%</label>
+      <label><input type="radio" name="fat" value="fat 30+">выше 30%</label>
     </div>
     <div class="sort-taste">
-      <p>Наполнители:
-        <label><input type="checkbox" name="toppings" value="chocolate" checked>шоколадные</label>
-        <label><input type="checkbox" name="toppings" value="sugar">сахарные присыпки</label>
-        <label><input type="checkbox" name="toppings" value="fruits">фрукты</label>
-        <label><input type="checkbox" name="toppings" value="syrup">сиропы</label>
-        <label><input type="checkbox" name="toppings" value="jam">джемы</label>
-      </p>
+      <p>Наполнители:</p>
+      <label><input type="checkbox" name="toppings" value="chocolate" checked>шоколадные</label>
+      <label><input type="checkbox" name="toppings" value="sugar">сахарные присыпки</label>
+      <label><input type="checkbox" name="toppings" value="fruits">фрукты</label>
+      <label><input type="checkbox" name="toppings" value="syrup">сиропы</label>
+      <label><input type="checkbox" name="toppings" value="jam">джемы</label>
     </div>
     <button class="btn-sort-icecream" type="button" name="button">Применить</button>
   </form>
 
-  <div>
+  <div class="item-card">
     <ul class="icecream-item">
       <li class="icecream-block">
         <img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -186,7 +182,7 @@
 
 </main>
 
-<footer>
+<footer class="footer">
   <div class="social">
     <ul>
       <li><a href="twitter.com" class="social-btn-TWIT"><img src="img/twitter.svg" alt="twitter"></a></li>
@@ -205,8 +201,10 @@
     </ul>
   </div>
 
-  <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="HTML Academy" class="logo-footer"></a>
-  <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
+  <div class="footer-right">
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="HTML Academy" class="logo-footer"></a>
+    <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
+  </div>
 </footer>
 
 

@@ -13,7 +13,7 @@
     <header class="main-header">
       <img src="img/logo.svg" width="154" height="64" alt="Gllacy">
       <nav class="main-navigation">
-        <ul>
+        <ul class="topmenu">
           <li class="main-navigation-li main-navigation-first-li"><a href="#">Каталог</a>
             <ul class="main-navigation-sub">
               <li class="main-navigation-title"><a href="#">Новинки</a></li>
@@ -31,12 +31,12 @@
       <div class="user-block">
         <a href="#" class="btn btn-search">поиск</a>
         <form class="search-bulb" action="index.html" method="post">
-          <input id="search" type="search" name="search" value="Что ищем?">
+          <input id="search" type="search" name="search" placeholder="Что ищем?">
         </form>
         <a href="#" class="btn btn-login">Вход</a>
         <form class="registr-bulb" action="#" method="get">
-          <input type="email" name="login" value="Электронная почта"><br>
-          <input type="text" name="password" value="Пароль"><br>
+          <input type="email" name="login" placeholder="Электронная почта"><br>
+          <input type="text" name="password" placeholder="Пароль"><br>
           <button class="btn" type="button" name="button" value="Войти">Войти</button>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
@@ -76,42 +76,44 @@
 
 
 
-      <section class="index-banner index-banner-raspberries">
-        <h2>Малинка даром!</h2>
-        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button class="btn" >Хочу варенье!</button>
-      </section>
+      <div class="container-offer">
+        <section class="index-banner index-banner-raspberries">
+          <h2>Малинка даром!</h2>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <button class="btn" >Хочу варенье!</button>
+        </section>
 
-      <section class="index-banner index-banner-chocolate">
-        <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <button class="btn" >Хочу шоколадки</button>
-      </section>
+        <section class="index-banner index-banner-chocolate">
+          <h2>Шоколадки даром!</h2>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <button class="btn" >Хочу шоколадки</button>
+        </section>
+      </div>
 
       <ul class="hit-icecream">
         <li class="icecream-block">
-          <img src="img/hit.svg" alt="HIT" width="61" height="61">
+          <img class="img-hit" src="img/hit.svg" alt="HIT" width="61" height="61">
           <img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <p class="icecream-price">310 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span class="weight">/кг</span></p>
+          <div class="icecream-price">310 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span class="weight">/кг</span></div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
           <button class="btn btn-item-hover">Быстрый просмотр</button>
         </li>
         <li class="icecream-block">
-          <img src="img/hit.svg" alt="HIT" width="61" height="61">
+          <img class="img-hit" src="img/hit.svg" alt="HIT" width="61" height="61">
           <img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <p class="icecream-price">380 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span class="weight">/кг</span></p>
+          <div class="icecream-price">380 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span class="weight">/кг</span></div>
           <a href="">Сливочно-кофейное с кусочками шоколада</a>
           <button class="btn btn-item-hover">Быстрый просмотр</button>
         </li>
         <li class="icecream-block">
-          <img src="img/hit.svg" alt="HIT" width="61" height="61">
+          <img class="img-hit" src="img/hit.svg" alt="HIT" width="61" height="61">
           <img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <div class="icecream-price">355 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span class="weight">/кг</span></div>
           <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
           <button class="btn btn-item-hover">Быстрый просмотр</button>
         </li>
         <li class="icecream-block">
-          <img src="img/hit.svg" alt="HIT" width="61" height="61">
+          <img class="img-hit" src="img/hit.svg" alt="HIT" width="61" height="61">
           <img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
           <div class="icecream-price">415 <img src="img/ruble.svg" width="31" height="36" alt="Рубль"><span class="weight">/кг</span></div>
           <a href="">Сливочное крем-брюле с карамельной подливкой</a>
@@ -142,22 +144,23 @@
         </ul>
       </section>
 
-      <article class="new-post">
-        <h2>Новое в нашем блоге</h2>
-        <a class="blog" href="#">10 способов сервировки  фруктовых щербетов к  столу</a>
-      </article>
+      <div class="container-seo">
+        <article class="new-post">
+          <h2>Новое в нашем блоге</h2>
+          <a class="blog" href="#">10 способов сервировки  фруктовых щербетов к  столу</a>
+        </article>
 
-      <div class="mailing">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#" method="get">
-          <input id="email" type="email" name="email" value="Электронная почта">
-          <button class="btn" type="submit" value="Отправить">Отправить</button>
-        </form>
+        <div class="mailing">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form action="#" method="get">
+            <input id="email" type="email" name="email" placeholder="Электронная почта">
+            <button class="btn" type="submit" value="Отправить">Отправить</button>
+          </form>
+        </div>
       </div>
 
-
+      <img src="img/maps.png" alt="maps" height="430" width="1200">
       <div class="index-maps">
-        <img src="img/maps.png" alt="maps" height="430" width="1200">
         <p>Адрес главного офиса<br>
             и офлайн-магазина: <br>
           <b> ул. Большая Конюшенная <br>
@@ -172,15 +175,15 @@
       </div>
       <form class="bulb-Feedback" action="#" method="get">
         <p>Мы обязательно вам ответим!</p>
-        <input type="text" name="name" value="Как вас зовут?"><br>
-        <input type="email" name="email" value="Ваша почта для ответа?"><br>
-        <textarea name="name" rows="8" cols="40">Напишите что-нибудь...</textarea><br>
+        <input type="text" name="name" placeholder="Как вас зовут?"><br>
+        <input type="email" name="email" placeholder="Ваша почта для ответа?"><br>
+        <textarea name="name" rows="8" cols="40" placeholder="Напишите что-нибудь..."></textarea><br>
         <button class="btn" type="button" name="entry" value="Отправить">Отправить</button>
       </form>
 
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="social">
         <ul>
           <li><a href="twitter.com" class="social-btn-TWIT"><img src="img/twitter.svg" alt="twitter"></a></li>
@@ -200,8 +203,10 @@
       </div>
 
 
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="HTML Academy" class="logo-footer"></a>
-      <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
+      <div class="footer-right">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="HTML Academy" class="logo-footer"></a>
+        <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</p>
+      </div>
     </footer>
 
 
